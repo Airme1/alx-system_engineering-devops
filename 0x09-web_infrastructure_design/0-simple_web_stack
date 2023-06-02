@@ -1,0 +1,27 @@
+- What is a server?
+A server is a remote computer part of a network of computers that stores information to be retrieved on the web and to
+
+- What is the role of the domain name?
+The domain name is a unique name that is used to identify a domain on a network, it is translated to an IP address by DNS when queried by a client.
+
+- What type of DNS record www is in www.foobar.com?
+www is a subdomain of foobar.com which is a domain name. A subdomain is a prefix added to a domain name to create a separate website under the same domain.
+
+- What is the role of the web server?
+The webserver is meant to serve the client with resources queried by the client, it recieves HTTP request from the client and sends HTTP response to the client after collecting the needed data requested by the client from database, servers and application server.
+
+- What is the role of application server?
+Application server performs computations and provides results needed by clients when queries are made.
+
+- What is the role of the database?
+The database is meant to store, organise, retrieve and manage data for easy use by the permited users
+
+- What is the server using to communicate with the computer of the user requesting the website?
+The server is using a protocol, which are rules that govern communication between devices on a network. The particular protocol used by the server and the user's computer is HTTP (Hypertext Transfer Protocol), it allows the sharing of resource such as HTML files.
+
+- ISSUES WITH THIS WEB INFRASTRUCTURE:
+- SPOF (Single Point of Failure): the system does not have any supporting component that can enable it keep on providing services in the event of any component failure.
+
+- Downtime when maintenance is needed: When a system maintenance is to be done, the sytem has to be shut down for the maintenance to be done on it. This is because the system relies on a single server which host all the resouces needed to serve the client.
+
+- Failure to scale in the instance of too much traffic: This web infrastructure has only one server and this makes it unscalable in the event of too much request made by users, the absence of any scaling mechanism such as an extra servers and a load balancer to help distribute request in the event of excess traffic on the server can lead to the system failing to handle such large amount of traffic.
