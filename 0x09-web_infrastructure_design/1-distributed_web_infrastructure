@@ -1,0 +1,20 @@
+# This web infrastructure is a three server web infrastructure having 2 primary servers and 1 secondary server. 
+
+The primary servers comprises of exactly same components in each of them. This is because both primary servers will be performing the same functions. The purpose of having two is to enable the network load to be shared properly between the two servers.
+
+# Distribution Algorithm for loadbalancer: the load balancer distributes the load across both servers. The distribution algorithm used in this infrastructure is round-robin distribution algorithm, since the two primary servers are exactly of the same specification the load balancer distributes connection request to the next server in line by placing each server in logically circular arrangement.
+
+# Is your load-balancer enabling an Active-Active or Active-Passive setup?
+My load-balancer is using an Active-Active setup
+An Active-Active setup is one in which the servers involved perform the same function at the same time, ie they are awake and running, while an Active-passive setup is one in which one of the servers is working while the other stand as backup server on standby in case of failure of the active server to cope with the work load, or in case of maintenance then the passive server takes over in the resource sharing and distribution on the network.
+
+# Difference between primary node and replica node:
+The difference between the primary and replica node with regards to the database is that the primary node database has the source (primary) data while the replica node database contains a copy of what is in the primary, this is done through scheduled synchronisation of data between both nodes. In the primary node data is being written and that  data is being copied into the replica node.
+
+# Issues with the Web Infrastructure:
+## Where are SPOF:
+In the infrastructure there is no provision made for server monitor, this means in the event of any irregularity in either of the server's behaviour the system may fail, also since there is no firewall in the system there is low confidentiality of data in the system.
+## No firewall and No HTTPS:
+Firewall is the minmum security which is recommended for any network to have. The absence of firewall means that the system is highly prone to successful attacks from external threat, also the absence of HTTPS (Hypertext Transfer Protocol Secure) means that data being shared on the network are not secured in any form, hence the data shared on the network are vulnerable to hackers.
+## No monitoring:
+A server monitor is meant to check the status of the servers for any abnormalities and raise any of such abnormalities to be fixed. The absence of a monitoring component in the system puts the system at the risk of unexpected downtime which can lead to very expensive loss of resource especially for a critical system.
