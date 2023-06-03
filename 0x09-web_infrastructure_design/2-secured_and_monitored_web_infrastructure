@@ -1,0 +1,19 @@
+# This web infrastructure has some extra features which is meant to increase the system's availability, reliability and security.
+## What are firewalls for?
+The Firewalls helps in securing the network against external threat, it does this by setting a rule which a HTTP request must pass if it is going to gain access to the network
+## Why traffic is served over HTTPS
+In this web infrastructure, traffic is served over HTTPS to secure data packets from being stolen or corrupted by attackers. It uses an SSL encryption to ensure the security of packets within the network.
+
+## What is Monitoring used for?
+Monitoring is used to check the status of a server, it checks for irregularities in the server and sends notification in the event of any. This is done by collecting and evaluating data from the server.
+
+## How monitoring tools collect data:
+Data is collected through a number of steps-
+1. Instrumentation: this involves adding configuration to a system to enable it expose data for monitoring
+2. Collection: This is the gathering of exposed data and sending them to a central location for processing
+3. Processing: is the transforming, enriching, validating, filtering and aggregating of data before storing it for analysis
+4. Sorage: This is keeping of data safely in a database
+5. Analysis This is the process of querying, exploring, visualizing and reporting on data to provide insight into the system.
+
+## Monitoring a web server QPS:
+QPS(Query Per Second) measures the rate of traffic on a website. It is important in accessing performance, scalability and reliability of a website
