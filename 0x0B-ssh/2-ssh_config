@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# SSH client config file permiting NO password and using private key .ssh/school
+
+echo "Host *
+	IdentityFile ~/.ssh/school
+	PasswordAuthentication no" >> ~/.ssh/config
