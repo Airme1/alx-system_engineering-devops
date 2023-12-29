@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
+# script to connect to remote server using the school private key
+# and username - ubuntu to connect
 ssh -i ~/.ssh/school ubuntu@100.25.48.79
